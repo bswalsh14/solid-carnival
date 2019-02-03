@@ -1,0 +1,13 @@
+
+body{
+       color: white;
+       background-image:url("http://i.imgur.com/vpo3Gon.jpg");
+       background-repeat:no-repeat;
+       background-size:cover;
+}
+h1 {
+    color: Yellow;
+}
+p {
+    color: red; 
+}

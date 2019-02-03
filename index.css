@@ -1,20 +1,17 @@
 body{
        color: white;
-       background-image:url("https://i.imgur.com/z570ly7.jpg");
-       background-repeat:no-repeat;
-       background-size:cover;
 }
+
 h1 {
     color: Blue;
 }
 
-/* The navigation bar */
 .navbar {
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
 }
 
 

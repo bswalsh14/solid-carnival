@@ -1,53 +1,74 @@
+<!DOCTYPE html>
 <html>
-  <div>
-  <a href="index.html" style="text-decoration : none; color : white;"
-              onmouseover="this.style.color='blue';"
-              onmouseout="this.style.color='black';"
-              > Home</a>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+.header, .footer {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+}
+.column {
+  float: left;
+  padding: 15px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.menu {
+  width: 25%;
+}
+.content {
+  width: 75%;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+.menu li:hover {
+  background-color: #0099cc;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Brendan Walsh</h1>
 </div>
-  <title>
-    The Legend of Zelda: Majora's Mask - All Bomber's Notebook Missions
-  </title>
-  <head>
-    <link rel="stylesheet" href="Work-Experience.css">
-    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
-  </head>
-  <body>
-    <br />
-    <h1> Locations </h1>
-    <ul type="square">
-      <li> <a href="ClockTown-Missions.html" style="text-decoration : none; color : white;"
-              onmouseover="this.style.color='yellow';"
-              onmouseout="this.style.color='white';"
-              > Clock Town Missions </a> </li>
-      <li> <a href="MilkRoad-Missions.html" style="text-decoration : none; color : white;"
-              onmouseover="this.style.color='yellow';"
-              onmouseout="this.style.color='white';"
-              > Milk Road Missions </a> </li>
-      <li> <a href="SouthernSwamp-Missions.html" style="text-decoration : none; color : white;"
-              onmouseover="this.style.color='yellow';"
-              onmouseout="this.style.color='white';"
-              > Southern Swamp Missions </a> </li>
-      <li> <a href="TerminaField-Missions.html" style="text-decoration : none; color : white;"
-              onmouseover="this.style.color='yellow';"
-              onmouseout="this.style.color='white';"
-              > Termina Field Missions </a> </li>
-      <li> <a href="Mountain-Missions.html" style="text-decoration : none; color : white;"
-              onmouseover="this.style.color='yellow';"
-              onmouseout="this.style.color='white';"
-              > Mountain Missions </a> </li>
-      <li> <a href="GreatBay-Missions.html" style="text-decoration : none; color : white;"
-              onmouseover="this.style.color='yellow';"
-              onmouseout="this.style.color='white';"
-              > Great Bay Missions </a> </li>
-      <li> <a href="IkanaCanyon-Missions.html" style="text-decoration : none; color : white;"
-              onmouseover="this.style.color='yellow';"
-              onmouseout="this.style.color='white';"
-              > Ikana Canyon Missions </a> </li>
-      <li> <a href="TheMoon-Missions.html" style="text-decoration : none; color : white;"
-              onmouseover="this.style.color='yellow';"
-              onmouseout="this.style.color='white';"
-              > The Moon Missions </a> </li>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li><a href="index.html"> 
+        Home </a> </li>
+      <li><a href="Work-Experience.html"> 
+        Work Experience </a> </li>
+      <li><a href="Education.html"> 
+        Education </a> </li>
+      <li><a href="Projects.html"> 
+        Projects </a> </li>
+      <li><a href="Skills.html"> 
+        Skills </a> </li>
     </ul>
-  </body>
+  </div>
+
+  <div class="column content">
+    <h1>Home</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+  </div>
+</div>
+
+</body>
 </html>

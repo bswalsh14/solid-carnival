@@ -1,68 +1,79 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  font-family: Arial;
+* {
+  box-sizing: border-box;
+}
+
+.header, .footer {
+  background-color: grey;
   color: white;
+  padding: 15px;
 }
 
-.split {
-  height: 100%;
-  width: 40%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+.column {
+  float: left;
+  padding: 15px;
 }
 
-.left {
-  left: 0;
-  background-color: #111;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.right {
-  right: 0;
-  background-color: red;
+.menu {
+  width: 25%;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.content {
+  width: 75%;
 }
 
-.centered img {
-  width: 150px;
-  border-radius: 50%;
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
 }
 </style>
 </head>
 <body>
-  
-<div class="split left">
-  <div class="centered">
-    <img src="http://www.personalbrandingblog.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640-300x300.png" alt="Profile">
-    <h2>Profile</h2>
-    <p> Works at Website </p>
-    <p> Town, State </p>
-    <p> email@gmail.com </p>
+
+<div class="header">
+  <h1>Brendan Walsh</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li>Home</li>
+      <li>Work Experience</li>
+      <li>Education</li>
+      <li>Projects</li>
+      <li>Skills</li>
+    </ul>
+  </div>
+
+  <div class="column content">
+    <h1>Home</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
   </div>
 </div>
 
-<div class="split right">
-  <div class="centered">
-    <a href="index.html" style="text-decoration : none; color : white;"
-            onmouseover="this.style.color='yellow';"
-            onmouseout="this.style.color='white';"
-            > Home</a>    
-    <h2>John Doe</h2>
-    <p>Some text here too.</p>
-  </div>
-</div>
-     
+
+
 </body>
-</html> 
+</html>
